@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: transparent;
+}
+
+.quote-box {
+    color: aqua;
+    background-color: transparent;
+    width: 700px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px aqua;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.quote-box h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quote-box h2::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border: radius 3px;
+    background: aqua;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.quote-box blockquote {
+    color: aqua;
+    font-size: 26px;
+    min-height: 110px;
+}
+
+.quote-box blockquote::before,
+.quote-box blockquote::after {
+    content: '"';
+}
+
+.quote-box span {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote-box span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: aqua;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.quote-box div {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-box button {
+    background:transparent;
+    /* color: #fff; */
+    border-radius: 25px;
+    border: 1px solid aqua;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    color: aqua;
+    transition: color 0.3s,border-color 0.3s;
+
+}
+.quote-box button:hover{
+    border-bottom: aqua;
+    color: aqua;
+    box-shadow: 0 25px 25px -18px aqua;
+    transform: translateY(-10px);
+}
+
+.quote-box button img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+
+}
+
+.quote-box button:nth-child(2) {
+    background: transparent;
+}
